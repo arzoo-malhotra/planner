@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arzoo Planner</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div class="container">
+<div class="hero">
+<h1>🌸 Arzoo Planner</h1>
+<p id="todayDate"></p>
+</div>
+
+<div class="stats">
+<div class="stat-card"><h3 id="totalTasks">0</h3><p>Total Tasks</p></div>
+<div class="stat-card"><h3 id="completedTasks">0</h3><p>Completed</p></div>
+<div class="stat-card"><h3 id="pendingTasks">0</h3><p>Pending</p></div>
+<div class="stat-card"><h3 id="completionRate">0%</h3><p>Progress</p></div>
+</div>
+
+<div class="card">
+<h2>🎓 Thesis Progress</h2>
+<div class="progress-row"><span>Literature Review</span><div class="progress"><div class="fill" style="width:80%"></div></div></div>
+<div class="progress-row"><span>Data Analysis</span><div class="progress"><div class="fill" style="width:60%"></div></div></div>
+<div class="progress-row"><span>Writing</span><div class="progress"><div class="fill" style="width:25%"></div></div></div>
+</div>
+
+<div class="card">
+<h2>✅ Tasks</h2>
+<div class="input-group">
+<input type="text" id="taskInput" placeholder="Task name">
+<input type="date" id="taskDate">
+<select id="taskPriority"><option>Low</option><option>Medium</option><option>High</option></select>
+<button onclick="addTask()">Add</button>
+</div>
+<ul id="taskList"></ul>
+</div>
+
+<div class="card">
+<h2>🛒 Shopping List</h2>
+<div class="input-group">
+<input type="text" id="shoppingInput" placeholder="Add item">
+<button onclick="addShopping()">Add</button>
+</div>
+<ul id="shoppingList"></ul>
+</div>
+
+<div class="card">
+<h2>📝 Notes</h2>
+<textarea id="notes" placeholder="Write notes here..."></textarea>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
