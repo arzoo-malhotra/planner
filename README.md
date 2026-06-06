@@ -1,1 +1,1 @@
-# arzoo-planner
+planner
